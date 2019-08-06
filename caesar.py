@@ -16,9 +16,12 @@ def menu():
 
 def cipher(char, n):
 	new_ascii = ord(char) + n
+
 	if (new_ascii not in range(97, 122+1)) and (new_ascii not in range(65, 90+1)):
+
 		if n > 0:
 			new_ascii = new_ascii - 26
+			
 		else:
 			new_ascii = new_ascii + 26
 
@@ -60,7 +63,7 @@ def decode():
 
 
 
-def main():
+if __name__ == "__main__":
 	choice = menu()
 
 	if choice == 1:
@@ -68,5 +71,3 @@ def main():
 	else:
 		decode()
 
-
-main()
