@@ -1,4 +1,7 @@
-import requests, time, os
+import os
+import time
+
+import requests # <pip3 install requests>
 
 TOTAL = 18
 
