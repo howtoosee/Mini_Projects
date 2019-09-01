@@ -2,14 +2,11 @@ import os
 import time
 
 import requests # <pip3 install requests>
+from mac_sys_notif import notify
 
 TOTAL = 18
 
-def notify(title, text):
-    os.system("""
-              osascript -e 'display notification "{}" with title "{}"'
-              """.format(text, title))
-    
+
 if __name__ == "__main__":
 	i = 1
 	while i <= TOTAL:
